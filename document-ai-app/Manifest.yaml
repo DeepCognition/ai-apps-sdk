@@ -1,0 +1,11 @@
+---
+# Do not modify this file
+VERSION: 1
+TYPE: APP
+LISTING_PATH: listing
+APP_PATH: app
+RUNTIMES:
+  DOC_AI:
+    NAME: DOC AI
+    VERSION: 1
+    TYPE: REMOTE_DC

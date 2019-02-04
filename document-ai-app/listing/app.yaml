@@ -1,0 +1,53 @@
+---
+# Modify this Yaml file accordingly
+VERSION : 2.0
+APP_NAME: #{Your Application Name here}
+APP_VERSION: 0.9.0
+APP_AUTHOR: #{Your Name here}
+APP_PLATFORM: Windows 10 - 64 bit
+APP_CATEGORY: 
+  - Documents
+APP_DETAIL_PAGE_MEDIA:
+  IMAGES:
+    - images/1.png
+    #{give the image names inside the images folder here} 
+APP_DETAIL_PAGE_HTML: app.html
+ICON_FILE: images/icon.png
+PUBLISH_URL: aws
+DOWNLOAD_LINK: #ignore the link 
+SHORT_DESCRIPTION: |
+  # {Replace your short Description on this line}
+LONG_DESCRIPTION: |
+  # {Replace your long Description on this line}
+  # {The description can be multi line}
+SUPPORT_TEXT: |
+  https://deepcognition.ai/support
+LEGAL_TEXT:
+ - Privacy Policy : https://deepcognition.ai/privacy-policy
+ - Term of Service: https://deepcognition.ai/tos
+EMPTY_TEMPLATE_ALLOWED: True
+TEMP_CACHE: []
+LAUNCH_COMMAND:
+  #{give your app name.exe} 
+  - document-ai-app.exe
+TRAINER:
+  NAME: #{Name of the AI trainer App}
+  MODEL: #ignore
+  VECTOR_SIZE: #ignore
+  BACKEND: "mxnet"
+  EPOCHS: #ignore
+  ACCURACY_THRESHOLD: #ignore
+  ROI_COLOR: (0, 191, 255, 255)
+  FONT_SIZE: 24
+  PEN_WIDTH: 3
+  SIZE: (0.08, 0.02)
+LAUNCH_WIZARD:
+  INTRO:
+    - Picture1.png
+    - Picture2.png
+    #give the image names inside the images/intro folder here
+  GUIDE:
+    - Picture1.png
+    - Picture2.png
+    - Picture5.png
+    #give the image names inside the images/guide folder here

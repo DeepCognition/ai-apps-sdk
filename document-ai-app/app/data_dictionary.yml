@@ -1,0 +1,79 @@
+#Example data_dictionary.yaml
+
+VERSION: 2
+
+# data group name
+EMPRINFO:
+  #Display name for the data group
+  DISPLAY_SHORT_NAME: Employer Information
+  #Field which map to the data group
+  FIELDS:
+    EMIN:
+      DISPLAY_SHORT_NAME: Employer Identification Number
+      #The value to the key "FUNC" must have it's condition to generate data inside data_generator.py
+      VAL_GENERATOR: 
+        FUNC: Number
+      #The datatype of the field
+      TYPE: Number
+      #If IS_PREVIEW is true,then the field is displayed on the table data of the app.
+      IS_PREVIEW: true
+    EMRN:
+      DISPLAY_SHORT_NAME: Employer Name
+      VAL_GENERATOR:
+        FUNC: CompanyName
+      TYPE: STRING
+      IS_PREVIEW: true
+    EMRA:
+      DISPLAY_SHORT_NAME: Employer Address
+      VAL_GENERATOR:
+        FUNC: Address
+      TYPE: STRING
+      MAX_PARTS: 2
+    EMRS:
+      DISPLAY_SHORT_NAME: Employer State
+      VAL_GENERATOR:
+        FUNC: State
+      TYPE: STRING
+    LOCN:
+      DISPLAY_SHORT_NAME: Locality Name
+      VAL_GENERATOR: 
+        FUNC: Locality
+      TYPE: STRING
+#Another data group 
+EMPINFO:
+  DISPLAY_SHORT_NAME: Employee Information
+  FIELDS:
+    EEIN:
+      DISPLAY_SHORT_NAME: Employee Identification Number
+      VAL_GENERATOR:
+        FUNC: Number
+      TYPE: Number
+      IS_PREVIEW: true 
+    EEFN:
+      DISPLAY_SHORT_NAME: Employee First Name
+      VAL_GENERATOR:
+        FUNC: FName
+      TYPE: STRING
+      IS_PREVIEW: true
+    EEIN:
+      DISPLAY_SHORT_NAME: Employee Initial
+      VAL_GENERATOR:
+        FUNC: Initial
+      TYPE: STRING
+    EELN:
+      DISPLAY_SHORT_NAME: Employee Last Name
+      VAL_GENERATOR:
+        FUNC: LName
+      TYPE: STRING
+      IS_PREVIEW: true
+    EESX:
+      DISPLAY_SHORT_NAME: Employee Suffix
+      VAL_GENERATOR: 
+        FUNC: Suffix
+      TYPE: STRING
+    EEAD:
+      DISPLAY_SHORT_NAME: Employee Address
+      VAL_GENERATOR:
+        FUNC: Address
+      TYPE: STRING
+      MAX_PARTS: 2    
